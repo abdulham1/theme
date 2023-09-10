@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: darkslategrey;
+  gap: 10px;
+}
+
+#chek {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: deepskyblue;
+}
+
+.container {
+  width: 100%;
+  height: 92%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 1s;
+}
+#chek:checked + .container {
+  background: darkslategrey;
+  transition: 1s;
+  color: whitesmoke;
+  font-family: cursive;
+}
